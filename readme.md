@@ -18,3 +18,28 @@ You can install `react-yadav-typewriter` via npm or yarn:
 ```bash
 npm install react-yadav-typewriter
 ```
+
+## Usage
+
+```
+
+import React from 'react';
+import Typewriter from 'react-yadav-typewriter';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to My Website</h1>
+      <Typewriter
+        textArray={['A Full Stack Developer', 'A MERN Stack Developer', 'A Mean Stack Developer']}
+        typingSpeed={100}
+        loop={true}
+      />
+    </div>
+  );
+};
+
+export default App;
+
+
+```
