@@ -1,15 +1,31 @@
 {
   "name": "react-yadav-typewriter",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.9",
+  "description": "A lightweight typewriter effect for React",
+  "main": "dist/index.js",
   "type": "module",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "rollup -c",
-    "tsc": "tsc"
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
   },
-  "keywords": [],
+  "scripts": {
+    "build": "tsc && rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "react",
+    "typewriter",
+    "animation",
+    "typescript",
+    "component"
+  ],
   "author": "Ritik Yadav",
   "license": "MIT",
   "dependencies": {

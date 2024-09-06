@@ -1,19 +1,19 @@
 {
     "compilerOptions": {
-        "target": "ES5",
-        "module": "ESNext",
-        "jsx": "react",
-        "declaration": true,
-        "outDir": "dist",
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+      "target": "ES5",
+      "module": "ESNext",
+      "declaration": true,  // Enable .d.ts generation
+      "declarationDir": "./dist",  // Specify the output directory for .d.ts files
+      "emitDeclarationOnly": true,  // Only emit declarations, not JavaScript
+      "jsx": "react",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "outDir": "./dist"  // Output directory for compiled files
     },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
-}
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
